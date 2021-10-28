@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\PasswordResetController;
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CorrectionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,9 +17,8 @@ use App\Http\Controllers\Auth\PasswordResetController;
 |
 */
 
-Route::get('/',function(){
-    return view('index');
-});
+Route::get('/',[HomeController::class,'index'])->name('homepage');
+Route::get('correction',[CorrectionController::class,'index'])->name('correction_page');
 
 Route::get('forgot-password',[PasswordResetController::class,'index'])->name('forgot_password_index');
 Route::post('forgot-password',[PasswordResetController::class,'password_reset'])->name('forgot_password');
