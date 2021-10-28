@@ -20,13 +20,13 @@ Route::get('/',function(){
     return view('index');
 });
 
-Route::get('forgot-password',[PasswordResetController::class,'password_reset_index'])->name('forgot_password_index');
+Route::get('forgot-password',[PasswordResetController::class,'index'])->name('forgot_password_index');
 Route::post('forgot-password',[PasswordResetController::class,'password_reset'])->name('forgot_password');
-Route::get('reset-password',[PasswordResetController::class,'resetPasswordIndex']);
+Route::get('reset-password',[PasswordResetController::class,'index']);
 Route::post('reset-password',[PasswordResetController::class,'resetPasswordForm'])->name('password_reset');
 
-Route::get('sign-up',[RegisterController::class,'register_index'])->name('register_index');
+Route::get('sign-up',[RegisterController::class,'index'])->name('register_index');
 Route::post('sign-up',[RegisterController::class,'register'])->name('register');
 
-Route::get('login',[LoginController::class,'login_index'])->name('login_index');
+Route::get('login',[LoginController::class,'index'])->name('login_index');
 Route::post('login',[LoginController::class,'login'])->name('login');
