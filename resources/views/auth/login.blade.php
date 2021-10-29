@@ -22,3 +22,5 @@
 <!-- Subscribe Start -->
 <x-subscribe />
 <!-- Subscribe End -->
+
+@endsection

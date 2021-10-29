@@ -1,5 +1,5 @@
 @extends('layouts.front-layout')
-@section('title','Home')
+@section('title','Self Correction')
 
 @section('content')
 
@@ -31,3 +31,5 @@
     <!-- Subscribe Start -->
         <x-subscribe/>
     <!-- Subscribe End -->
+
+    @endsection

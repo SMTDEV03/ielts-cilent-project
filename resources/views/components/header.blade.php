@@ -34,7 +34,7 @@
          <div class="header-main-wrapper">
             <!-- Header Logo Start -->
             <div class="header-logo flex-grow-1">
-               <a href="index.html"><img src="{{ asset('public/assets/front_assets/images/logo.png') }}" alt="Logo"></a>
+               <a href="{{ route('homepage') }}"><img src="{{ asset('public/assets/front_assets/images/logo.png') }}" alt="Logo"></a>
             </div>
             <!-- Header Logo End -->
             <!-- Header Menu Start -->

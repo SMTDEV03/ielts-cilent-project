@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class LetterSampleController extends Controller
 {
     public function index(){
-        return view('index');
+        return view('pages.letters.index');
     }
 }
