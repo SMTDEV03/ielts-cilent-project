@@ -6,7 +6,7 @@
                   <h4 class="sub-title">Start your Practice Test</h4>
                   <h2 class="main-title">Offer Self Correct <span>essay</span> for grammar</h2>
                   <p>Our IELTS Reading and Listening tests based on actual IELTS tests and following the Cambridge IELTS book format and always free.</p>
-                  <a class="btn btn-primary btn-hover-dark" href="self-correction.html">Start Essay Correction</a>
+                  <a class="btn btn-primary btn-hover-dark" href="{{ route('correction_page') }}">Start Essay Correction</a>
                </div>
                <!-- Slider Content End -->
             </div>
