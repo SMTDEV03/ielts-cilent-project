@@ -31,7 +31,7 @@ Route::post('forgot-password',[PasswordResetController::class,'password_reset'])
 Route::get('reset-password',[PasswordResetController::class,'index']);
 Route::post('reset-password',[PasswordResetController::class,'resetPasswordForm'])->name('password_reset');
 
-Route::get('sign-up',[RegisterController::class,'index'])->name('register_index');
+Route::get('register',[RegisterController::class,'index'])->name('register_index');
 Route::post('sign-up',[RegisterController::class,'register'])->name('register');
 
 Route::get('login',[LoginController::class,'index'])->name('login_index');

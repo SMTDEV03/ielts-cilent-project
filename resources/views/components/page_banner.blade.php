@@ -3,10 +3,10 @@
       <!-- Page Banner Start -->
       <div class="page-banner-content">
          <ul class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">Writing</li>
+            <li><a href="{{ route('homepage') }}">Home</a></li>
+            <li class="active">{{ $path }}</li>
          </ul>
-         <h2 class="title">Self Correction <span>Essay</span></h2>
+         {{ $slot }}
       </div>
       <!-- Page Banner End -->
    </div>
