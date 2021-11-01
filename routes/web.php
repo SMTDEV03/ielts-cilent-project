@@ -22,6 +22,8 @@ use App\Http\Controllers\TipsController;
 
 Route::get('/',[HomeController::class,'index'])->name('homepage');
 Route::get('correction',[CorrectionController::class,'index'])->name('correction_page');
+Route::get('self-correction',[CorrectionController::class,'create'])->name('self-correction');
+
 Route::get('essay-samples',[EssaySampleController::class,'index'])->name('essay_samples');
 Route::get('letter-samples',[LetterSampleController::class,'index'])->name('letter_samples');
 

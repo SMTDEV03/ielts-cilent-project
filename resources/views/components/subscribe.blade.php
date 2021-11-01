@@ -11,7 +11,7 @@
           <div class="section-title section-title-white">
              <h5 class="sub-title">Ready to start?</h5>
              <h2 class="main-title text-capitalize"> Become a Member and get access to all premium <br>features and extra content</h2>
-             <a href="login.html" class="btn btn-primary subscribe-btn mt-5">Subscribe Now!</a>
+             <a href="{{ route('login_index') }}" class="btn btn-primary subscribe-btn mt-5">Subscribe Now!</a>
           </div>
        </div>
        <!-- Download App Wrapper End -->
