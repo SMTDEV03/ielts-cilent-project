@@ -12,4 +12,5 @@ class sample extends Model
     public function meta_sample(){
         return $this->hasMany(meta_sample::class);
     }
+
 }

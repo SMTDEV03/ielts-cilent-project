@@ -9,7 +9,7 @@
                 <!-- Sidebar Widget Post Start -->
                 <div class="single-post">
                    <div class="post-content px-0">
-                        <h5 class="title"><a href="detailed-samples/{{$s->id}}">{{ $s->question }}</a></h5>
+                        <h5 class="title"><a href="{{ route('detail_samples',[$s->sample->type,$s->id]) }}">{{ $s->question }}</a></h5>
                         <span class="date"><i class="icofont-calendar"></i> {{ date('d F,Y', strtotime($s->created_at)) }}</span>
                    </div>
                 </div>

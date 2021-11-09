@@ -18,6 +18,7 @@ class faq extends Component
     {
         $this->data=$data;
         $this->currentYear=$currentYear;
+
     }
 
     /**

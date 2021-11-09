@@ -1,5 +1,5 @@
 @extends('layouts.front-layout')
-@section('title','Recent Essays')
+@section('title','Recent Letters')
 
 @section('content')
 
@@ -9,12 +9,13 @@
 
 <!-- Page Banner Start -->
 <x-page_banner path="Writing">
-    <h2 class="title">Essays With <span>Sample</span></h2>
+    <h2 class="title">{{ ucfirst($type) }} With <span>Sample</span></h2>
 </x-page_banner>
 <!-- Page Banner End -->
 
+
 <!-- faq Start -->
-<x-faq />
+<x-faq :data="$samples" :currentYear="$current_year" />
 <!-- faq End -->
 
 <!-- Subscribe Start -->

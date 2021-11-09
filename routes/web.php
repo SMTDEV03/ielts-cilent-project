@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CorrectionController;
 use App\Http\Controllers\EssaySampleController;
 use App\Http\Controllers\LetterSampleController;
+use App\Http\Controllers\SampleController;
 use App\Http\Controllers\TipsController;
 /*
 |--------------------------------------------------------------------------
@@ -24,11 +25,8 @@ Route::get('/',[HomeController::class,'index'])->name('homepage');
 Route::get('correction',[CorrectionController::class,'index'])->name('correction_page');
 Route::get('self-correction',[CorrectionController::class,'create'])->name('self-correction');
 
-Route::get('essay-samples',[EssaySampleController::class,'index'])->name('essay_samples');
-Route::get('detailed-samples/{id}',[EssaySampleController::class,'show']);
-
-Route::get('letter-samples',[LetterSampleController::class,'index'])->name('letter_samples');
-Route::get('detailed-samples/{id}',[EssaySampleController::class,'show']);
+Route::get('samples/{type}',[SampleController::class,'index'])->name('samples');
+Route::get('detailed-sample/{type}/{id}',[SampleController::class,'show'])->name('detail_samples');
 
 Route::get('forgot-password',[PasswordResetController::class,'index'])->name('forgot_password_index');
 Route::post('forgot-password',[PasswordResetController::class,'password_reset'])->name('forgot_password');

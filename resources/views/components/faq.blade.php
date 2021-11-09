@@ -27,7 +27,7 @@
                             <div class="col-lg-7">
                                 <div class="faq-text">
                                     <p>{{ substr($s->answer, 0, 250) }} ...</p>
-                                    <a class="theme-link float-start" href="detailed-samples/{{$s->id}}">Read my sample answer for this question here...</a>
+                                    <a class="theme-link float-start" href="{{ route('detail_samples',[$s->sample->type, $s->id]) }}">Read my sample answer for this question here...</a>
                                     <div class="blog-meta cust-date float-end">
                                         <span> <i class="icofont-calendar"></i> {{ date('d F,Y', strtotime($s->created_at)) }}</span>
                                     </div>

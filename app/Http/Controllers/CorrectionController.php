@@ -13,12 +13,8 @@ class CorrectionController extends Controller
 {
     public function index()
     {
-        $samples = meta_sample::latest()->take(4)->get();
+        $samples = meta_sample::latest()->take(5)->inRandomOrder()->get();
         return view('pages.correction.index',compact('samples'));
     }
 
-    public function create()
-    {
-        
-    }
 }
