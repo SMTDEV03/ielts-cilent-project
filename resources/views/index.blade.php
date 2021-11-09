@@ -92,7 +92,7 @@
                   <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Lorem Ipsum has been the industr’s.</li>
                   <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Lorem Ipsum has been the industr’s standard.</li>
                </ul>
-               <a href="self-correction.html" class="btn btn-primary btn-hover-dark">Start Testing</a>
+               <a href="{{ route('correction_page') }}" class="btn btn-primary btn-hover-dark">Start Testing</a>
             </div>
             <!-- About Content End -->
          </div>
@@ -114,7 +114,7 @@
                   <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Lorem Ipsum has been the industr’s standard.</li>
                   <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Lorem Ipsum has been the industr’s.</li>
                </ul>
-               <a href="self-correction.html" class="btn btn-primary btn-hover-dark">Start Testing</a>
+               <a href="{{ route('correction_page') }}" class="btn btn-primary btn-hover-dark">Start Testing</a>
             </div>
             <!-- About Content End -->
          </div>

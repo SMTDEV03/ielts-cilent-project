@@ -15,7 +15,7 @@ class CreateMetaSamplesTable extends Migration
     {
         Schema::create('meta_samples', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('samples_id');
+            $table->foreignId('sample_id');
             $table->text('question');
             $table->text('answer');
             $table->timestamps();

@@ -11,9 +11,11 @@ class sidebar extends Component
      *
      * @return void
      */
-    public function __construct()
+    public $data; 
+
+    public function __construct($data)
     {
-        //
+        $this->data=$data;
     }
 
     /**
@@ -23,6 +25,6 @@ class sidebar extends Component
      */
     public function render()
     {
-        return view('components.sidebar');
+        return view('components.sidebar',['data' => $this->data]);
     }
 }

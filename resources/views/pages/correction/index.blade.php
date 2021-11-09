@@ -23,7 +23,7 @@
             </div>
             <div class="col-lg-4">
                 <!-- Sidebar Start -->
-                <x-sidebar />
+                <x-sidebar :data="$samples"/>
                 <!-- Sidebar End -->
             </div>
         </div>

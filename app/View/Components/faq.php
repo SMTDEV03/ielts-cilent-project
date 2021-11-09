@@ -11,9 +11,13 @@ class faq extends Component
      *
      * @return void
      */
-    public function __construct()
+    public $data; 
+    public $currentYear;
+
+    public function __construct($data,$currentYear)
     {
-        //
+        $this->data=$data;
+        $this->currentYear=$currentYear;
     }
 
     /**
@@ -23,6 +27,9 @@ class faq extends Component
      */
     public function render()
     {
-        return view('components.faq');
+        return view('components.faq',[
+            'data' => $this->data,
+            'currentYear' => $this->currentYear
+        ]);
     }
 }

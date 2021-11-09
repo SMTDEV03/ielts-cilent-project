@@ -14,7 +14,7 @@
 <!-- Page Banner End -->
 
 <!-- faq Start -->
-<x-faq :data="$essay_samples" :currentYear="$current_year" />
+<x-faq />
 <!-- faq End -->
 
 <!-- Subscribe Start -->
