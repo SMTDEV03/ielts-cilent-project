@@ -21,20 +21,26 @@ use App\Http\Controllers\TipsController;
 |
 */
 
-Route::get('/',[HomeController::class,'index'])->name('homepage');
-Route::get('correction',[CorrectionController::class,'index'])->name('correction_page');
-Route::get('self-correction',[CorrectionController::class,'create'])->name('self-correction');
+Route::group(['middleware' => 'guest'], function () {
+    Route::get('/', [HomeController::class, 'index'])->name('homepage');
+    Route::get('correction', [CorrectionController::class, 'index'])->name('correction_page');
+    Route::get('self-correction', [CorrectionController::class, 'create'])->name('self-correction');
 
-Route::get('samples/{type}',[SampleController::class,'index'])->name('samples');
-Route::get('detailed-sample/{type}/{id}',[SampleController::class,'show'])->name('detail_samples');
+    Route::get('samples/{type}', [SampleController::class, 'index'])->name('samples');
+    Route::get('detailed-sample/{type}/{id}', [SampleController::class, 'show'])->name('detail_samples');
 
-Route::get('forgot-password',[PasswordResetController::class,'index'])->name('forgot_password_index');
-Route::post('forgot-password',[PasswordResetController::class,'password_reset'])->name('forgot_password');
-Route::get('reset-password',[PasswordResetController::class,'index']);
-Route::post('reset-password',[PasswordResetController::class,'resetPasswordForm'])->name('password_reset');
+    Route::get('forgot-password', [PasswordResetController::class, 'index'])->name('forgot_password_index');
+    Route::post('forgot-password', [PasswordResetController::class, 'password_reset'])->name('forgot_password');
+    Route::get('reset-password', [PasswordResetController::class, 'index']);
+    Route::post('reset-password', [PasswordResetController::class, 'resetPasswordForm'])->name('password_reset');
 
-Route::get('register',[RegisterController::class,'index'])->name('register_index');
-Route::post('sign-up',[RegisterController::class,'register'])->name('register');
+    Route::get('register', [RegisterController::class, 'index'])->name('register_index');
+    Route::post('sign-up', [RegisterController::class, 'register'])->name('register');
 
-Route::get('login',[LoginController::class,'index'])->name('login_index');
-Route::post('login',[LoginController::class,'login'])->name('login');
+    Route::get('login', [LoginController::class, 'index'])->name('login_index');
+    Route::post('login', [LoginController::class, 'login'])->name('login');
+});
+
+Route::group(['middleware' => 'guest'], function () {
+    
+});

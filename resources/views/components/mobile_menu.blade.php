@@ -22,9 +22,9 @@
          <li>
             <a href="#">Writing</a>
             <ul class="sub-menu">
-               <li><a href="{{ route('essay_samples') }}">Recent Essays with Sample</a></li>
+               <li><a href="{{ route('samples','essays') }}">Recent Essays with Sample</a></li>
                <li><a href="{{ route('correction_page') }}">Self Essay Correction</a></li>
-               <li><a href="{{ route('letter_samples') }}">Letters</a></li>
+               <li><a href="{{ route('samples','letters') }}">Letters</a></li>
             </ul>
          </li>
          <li><a href="#">Tips</a></li>
