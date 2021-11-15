@@ -2993,8 +2993,8 @@ small.text-muted {
 	background-color: #e7e7e7
 }
 .btn-primary{
-	background-color: #ffffff;
-	border-color: #4857d0
+	background-color: #28262a;
+	border-color: #ffffff
 }
 caption button.btn-default{
 	background-color: #ffffff;
@@ -3003,14 +3003,18 @@ caption button.btn-default{
 	color:#FFF;
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary.hover, caption button.btn-default:hover{
-	background-color: #6a79ee
+	background-color: #101010;
+
 }
 .btn-success {
-	background-color: #00a65a;
-	border-color: #008d4c
+	background-color: #282626;
+	border-color: #edf3f0
 }
 .btn-success:hover, .btn-success:active, .btn-success.hover {
-	background-color: #008d4c
+	background-color: #131212
+}
+.btn-success:hover{
+	border-color: white !important;
 }
 .btn-info {
 	background-color: #008cd3;
@@ -3165,7 +3169,7 @@ caption button.btn-default{
 	color:#FFF;
 }
 .pricing-box.active{
-	background:#ffffff;
+	background:#b60303;
 	color:#FFF;
 	border:solid 1px #ffffff;
 }
@@ -3187,7 +3191,7 @@ ul.plan-list li{
 	border-bottom:solid 1px #eaebeb;
 }
 .pricing-box.active ul.plan-list li{
-	border-bottom:solid 1px #6e7cef;
+	border-bottom:solid 1px #b60303;
 }
 .panel-title{
 	border-bottom:solid 1px #eaebeb;

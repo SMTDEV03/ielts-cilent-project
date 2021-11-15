@@ -27,7 +27,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         sample::create([
-            'type' => 'essay',
+            'type' => 'essays',
         ]);
 
         meta_sample::factory(30)->create();

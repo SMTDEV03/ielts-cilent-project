@@ -20,8 +20,13 @@ class LoginController extends Controller
         ]);
 
         if(Auth::attempt($attr)){
-            return redirect('/')->with('success','Login Successfully');
+            return redirect('user/')->with('success','Login Successfully');
         }
         return back()->withErrors(['error' => 'Something went wrong']);
+    }
+
+    public function logout(Request $request){
+        Auth::logout();
+        return redirect()->route('homepage');
     }
 }

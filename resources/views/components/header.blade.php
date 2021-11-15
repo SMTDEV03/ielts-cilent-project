@@ -40,7 +40,7 @@
             <!-- Header Menu Start -->
             <div class="header-menu d-none d-lg-block">
                <ul class="nav-menu">
-                  <li><a href="{{ route('homepage') }}">Home</a></li>
+                  <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="{{ route('homepage') }}">Home</a></li>
                   <li>
                      <a href="#">Writing</a>
                      <ul class="sub-menu">
@@ -49,16 +49,27 @@
                         <li><a href="{{ route('samples','letters') }}">Letters</a></li>
                      </ul>
                   </li>
-                  <li><a href="#">Tips</a></li>
+                  <li><a href="{{ route('login_index') }}">Tips</a></li>
                   <li><a href="{{ route('correction_page') }}">Essay Correction</a></li>
+                  @if(isset(auth()->user()->id))
+                  <li>
+                     <a href="#"><i class="fa fa-user-circle-o fa-lg"></i></a>
+                     <ul class="sub-menu">
+                        <li><a href="{{ route('login_index') }}">My Account</a></li>
+                        <li><a href="{{ route('logout') }}">logout</a></li>
+                     </ul>
+                  </li>
+                  @endif
                </ul>
             </div>
             <!-- Header Menu End -->
             <!-- Header Sing In & Up Start -->
             <div class="header-sign-in-up d-none d-lg-block">
                <ul>
+                  @if(!isset(auth()->user()->id))
                   <li><a class="sign-in" href="{{ route('login_index') }}">Login</a></li>
                   <li><a class="sign-up" href="{{ route('register_index') }}">Sign Up</a></li>
+                  @endif
                </ul>
             </div>
             <!-- Header Sing In & Up End -->

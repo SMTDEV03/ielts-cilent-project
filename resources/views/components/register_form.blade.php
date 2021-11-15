@@ -19,7 +19,10 @@
                    @csrf
                    <!-- Single Form Start -->
                    <div class="single-form">
-                      <input type="text" name="name" placeholder="Name">
+                      <input type="text" name="fname" placeholder="First Name">
+                   </div>
+                   <div class="single-form">
+                      <input type="text" name="lname" placeholder="Last Name">
                    </div>
                    <!-- Single Form End -->
                    <!-- Single Form Start -->

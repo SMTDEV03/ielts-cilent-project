@@ -15,17 +15,21 @@ class RegisterController extends Controller
 
     public function register(Request $request){
         $request->validate([
-            'name' => 'required|max:255',
+            'fname' => 'required|max:155',
+            'lname' => 'required|max:155',
             'email' => 'required|unique:users|max:255',
             'password' => 'required|min:6',
         ]);
+
         $user = User::create([
-            'name' => $request->name,
+            'fname' => $request->fname,
+            'lname' => $request->lname,
             'email' => $request->email,
+            'role' => 1,
             'password' => bcrypt($request->password),
         ]);
         if($user){
-            return redirect('/')->with('success','Registered Successfully');
+            return redirect('/login')->with('success','Registered Successfully');
         }
         return back()->withErrors(['error' => 'Something went wrong']);
     }
