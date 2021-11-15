@@ -57,7 +57,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="treeview"> <a href="#"> <i class="fa fa-envelope-o "></i> <span>Settings</span> <span class="pull-right-container"> </span> </a>
+            <li > <a href="{{ route('user_profile') }}"> <i class="fa fa-envelope-o "></i> <span>Settings</span> <span class="pull-right-container"> </span> </a>
             </li>
             </li>
         </ul>

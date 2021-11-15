@@ -61,5 +61,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::group(['prefix' => 'user'], function () {
         Route::get('/', [UserController::class, 'index'])->name('user_homepage');
         Route::get('/become-supporter', [PaymentController::class, 'index'])->name('become_supporter');
+        Route::get('/profile', [UserController::class, 'profile_setting'])->name('user_profile');
+        Route::post('/profile',[UserController::class, 'store'])->name('update_profile');
     });
 });

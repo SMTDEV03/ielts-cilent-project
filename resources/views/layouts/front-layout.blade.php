@@ -14,9 +14,7 @@
    <link rel="stylesheet" href="{{ asset('public/assets/front_assets/css/style.min.css') }}">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css">
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-   
    @yield('extra-css')
-
 </head>
 
 <body>

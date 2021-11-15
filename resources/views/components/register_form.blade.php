@@ -19,25 +19,25 @@
                    @csrf
                    <!-- Single Form Start -->
                    <div class="single-form">
-                      <input type="text" name="fname" placeholder="First Name">
+                      <input type="text" name="fname" placeholder="First Name" value="{{ old('fname') }}">
                    </div>
                    <div class="single-form">
-                      <input type="text" name="lname" placeholder="Last Name">
-                   </div>
-                   <!-- Single Form End -->
-                   <!-- Single Form Start -->
-                   <div class="single-form">
-                      <input type="email" name="email" placeholder="Email">
+                      <input type="text" name="lname" placeholder="Last Name" value="{{ old('lname') }}">
                    </div>
                    <!-- Single Form End -->
                    <!-- Single Form Start -->
                    <div class="single-form">
-                      <input type="password" name="password" placeholder="Password">
+                      <input type="email" name="email" placeholder="Email" value="{{ old('email') }}">
                    </div>
                    <!-- Single Form End -->
                    <!-- Single Form Start -->
                    <div class="single-form">
-                      <input type="password" name="c_password" placeholder="Confirm Password">
+                      <input type="password" name="password" placeholder="Password" value="{{ old('password') }}">
+                   </div>
+                   <!-- Single Form End -->
+                   <!-- Single Form Start -->
+                   <div class="single-form">
+                      <input type="password" name="c_password" placeholder="Confirm Password" value="{{ old('c_password') }}">
                    </div>
                    <!-- Single Form End -->
                    <!-- Single Form Start -->
