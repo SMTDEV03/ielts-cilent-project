@@ -12,4 +12,9 @@ class AdminController extends Controller
         $this->middleware('isAdmin');
     }
 
+    public function index()
+    {
+        return view('admin.dashboard');
+    }
+
 }

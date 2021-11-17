@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
-class IsAdmin
+class isUser
 {
     /**
      * Handle an incoming request.
@@ -17,10 +17,10 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Auth::user() &&  Auth::user()->role_id == 2) {
+        if (Auth::user() &&  Auth::user()->role_id == 1) {
             return $next($request);
        }
 
-       return redirect('user/')->with('error','You have not admin access');
+       return redirect('admin/')->with('error','You have not admin access');
     }
 }

@@ -11,6 +11,7 @@ use App\Http\Controllers\LetterSampleController;
 use App\Http\Controllers\SampleController;
 use App\Http\Controllers\TipsController;
 use App\Http\Controllers\User\UserController;
+use App\Http\Controllers\Admin\UserListController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\User\PaymentController;
 /*
@@ -53,12 +54,13 @@ Route::group(['middleware' => 'auth'], function () {
     // For Admin Routes only 
     Route::group(['middleware' => 'isAdmin', 'prefix' => 'admin'], function () {
         Route::get('/', [AdminController::class, 'index'])->name('admin_homepage');
+        Route::get('/user-list', [UserListController::class, 'index'])->name('admin_user_list');
     });
 
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
     // For User Routes only 
-    Route::group(['prefix' => 'user'], function () {
+    Route::group(['middleware' => 'isUser','prefix' => 'user'], function () {
         Route::get('/', [UserController::class, 'index'])->name('user_homepage');
         Route::get('/become-supporter', [PaymentController::class, 'index'])->name('become_supporter');
         Route::get('/profile', [UserController::class, 'profile_setting'])->name('user_profile');

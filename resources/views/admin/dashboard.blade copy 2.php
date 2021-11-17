@@ -5,7 +5,7 @@
 
 
 <!-- Dashboard aside Start -->
-<x-dashboard.admin_aside />
+<x-dashboard.aside />
 <!-- Dashboard aside End -->
 
 <!-- Content Wrapper. Contains page content -->

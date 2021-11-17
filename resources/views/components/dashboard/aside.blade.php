@@ -18,16 +18,16 @@
 
             <li class="treeview"> <a href="#"> <i class="fa fa-bullseye"></i> <span>Speaking</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages-faq.html">Speaking club</a></li>
-                    <li><a href="pages-faq.html">Recent Topics</a></li>
-                    <li><a href="pages-faq.html">Sample Answers</a></li>
+                    <li><a href="{{ route('become_supporter') }}">Speaking club</a></li>
+                    <li><a href="{{ route('become_supporter') }}">Recent Topics</a></li>
+                    <li><a href="{{ route('become_supporter') }}">Sample Answers</a></li>
                 </ul>
             </li>
 
             <li class="treeview"> <a href="#"> <i class="fa fa-bullseye"></i> <span>Listening</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
                 <ul class="treeview-menu">
-                    <li><a href="apps-calendar.html"> Tests</a></li>
-                    <li><a href="apps-support-ticket.html">Vocabulary</a></li>
+                    <li><a href="{{ route('become_supporter') }}"> Tests</a></li>
+                    <li><a href="{{ route('become_supporter') }}">Vocabulary</a></li>
                 </ul>
             </li>
 
@@ -35,24 +35,24 @@
 
             <li class="treeview"> <a href="#"> <i class="fa fa-bullseye"></i> <span>Reading</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
                 <ul class="treeview-menu">
-                    <li><a href="widget-data.html">Academic Tests</a></li>
-                    <li><a href="widget-data.html">General Tests</a></li>
-                    <li><a href="widget-data.html">Vocabulary</a></li>
+                    <li><a href="{{ route('become_supporter') }}">Academic Tests</a></li>
+                    <li><a href="{{ route('become_supporter') }}">General Tests</a></li>
+                    <li><a href="{{ route('become_supporter') }}">Vocabulary</a></li>
                 </ul>
             </li>
 
 
             <li class="treeview"> <a href="#"> <i class="fa fa-bullseye"></i> <span>Writing</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
                 <ul class="treeview-menu">
-                    <li><a href="apps-calendar.html">IELTS Expert</a></li>
-                    <li><a href="apps-support-ticket.html">Premium Checker</a></li>
-                    <li><a href="apps-contacts.html">Simple Checker </a></li>
-                    <li><a href="apps-contact-grid.html">My Writings</a></li>
+                    <li><a href="{{ route('become_supporter') }}">IELTS Expert</a></li>
+                    <li><a href="{{ route('become_supporter') }}">Premium Checker</a></li>
+                    <li><a href="{{ route('become_supporter') }}">Simple Checker </a></li>
+                    <li><a href="{{ route('become_supporter') }}">My Writings</a></li>
                     <li class="treeview"> <a href="#"> <i class="fa fa-envelope-o "></i> <span>Top Examples</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
                         <ul class="treeview-menu">
-                            <li><a href="apps-mailbox.html">Academic </a></li>
-                            <li><a href="apps-mailbox-detail.html">Letter</a></li>
-                            <li><a href="apps-compose-mail.html">Essay</a></li>
+                            <li><a href="{{ route('become_supporter') }}">Academic </a></li>
+                            <li><a href="{{ route('become_supporter') }}">Letter</a></li>
+                            <li><a href="{{ route('become_supporter') }}">Essay</a></li>
                         </ul>
                     </li>
                 </ul>
