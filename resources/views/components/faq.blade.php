@@ -51,10 +51,3 @@
     </div>
 </div>
 
-@section('extra-js')
-<script>
-    $(document).ready(function(){
-
-    });
-</script>
-@endsection

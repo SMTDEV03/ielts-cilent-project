@@ -24,7 +24,7 @@
                 <!-- User Account: style can be found in dropdown.less -->
                 <li class="dropdown user user-menu p-ph-res"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user-circle-o fa-2x"></i> </a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('user_profile') }}"><i class="icon-profile-male"></i> My Account</a></li>
+                        <li><a href="{{ route('user_profile') }}"><i class="fa fa-user"></i> My Account</a></li>
                         <li><a href="{{ route('logout') }}"><i class="fa fa-power-off"></i>Logout</a></li>
                     </ul>
                 </li>

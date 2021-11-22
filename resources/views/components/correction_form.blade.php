@@ -10,7 +10,7 @@
             <!-- Single Form End -->
             <!-- Single Form Start -->
             <div class="single-form">
-               <textarea class="h-auto" placeholder="Type or paste your essay, letter or academic writing" rows="14" cols="50"></textarea>
+               <textarea class="h-auto" placeholder="Type or paste your essay, letter or academic writing" rows="14" cols="50" id="correct1" main="0"></textarea>
             </div>
             <!-- Single Form End -->
             <div class="single-form">

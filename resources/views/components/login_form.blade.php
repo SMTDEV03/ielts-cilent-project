@@ -25,6 +25,7 @@
                       @enderror
                    </div>
                    <!-- Single Form End -->
+
                    <!-- Single Form Start -->
                    <div class="single-form">
                       <input type="password" name="password" class="form-control" placeholder="Enter password" value="{{ old('password') }}">
@@ -33,6 +34,7 @@
                       @enderror
                    </div>
                    <!-- Single Form End -->
+                   
                    <!-- Single Form Start -->
                    <div class="single-form">
                       <button class="btn btn-primary btn-hover-dark w-100">Login</button>

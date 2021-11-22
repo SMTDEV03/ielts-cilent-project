@@ -12,8 +12,10 @@ use App\Http\Controllers\SampleController;
 use App\Http\Controllers\TipsController;
 use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Admin\UserListController;
+use App\Http\Controllers\Admin\SampleListController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\User\PaymentController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,7 +56,29 @@ Route::group(['middleware' => 'auth'], function () {
     // For Admin Routes only 
     Route::group(['middleware' => 'isAdmin', 'prefix' => 'admin'], function () {
         Route::get('/', [AdminController::class, 'index'])->name('admin_homepage');
+
+        // Operation on User Routes 
         Route::get('/user-list', [UserListController::class, 'index'])->name('admin_user_list');
+
+        Route::get('/user_create', [UserListController::class, 'create'])->name('admin_user_create');
+        Route::post('/user_create', [UserListController::class, 'store'])->name('admin_user_store');
+        Route::get('/user_edit/{id}', [UserListController::class, 'edit'])->name('admin_user_edit');
+        Route::post('/user_update', [UserListController::class, 'update'])->name('admin_user_update');
+        Route::get('/user_delete/{id}', [UserListController::class, 'destroy'])->name('admin_user_delete');
+        // End Operation on User Routes 
+
+        // Operation on User Routes 
+         Route::get('/sample-list/{type}', [SampleListController::class, 'index'])->name('admin_samples');
+
+         Route::get('/sample_create',[SampleListController::class, 'create'])->name('admin_sample_create');
+         Route::post('/sample_create',[SampleListController::class, 'store'])->name('admin_sample_store');
+         Route::get('/sample_edit/{id}',[SampleListController::class, 'edit'])->name('admin_sample_edit');
+         Route::post('/sample_update', [SampleListController::class, 'update'])->name('admin_sample_update');
+         Route::get('/sample_delete/{id}',[SampleListController::class, 'destroy'])->name('admin_sample_delete');
+         // End Operation on User Routes 
+
+        Route::get('/profile', [AdminController::class, 'profile_setting'])->name('admin_profile');
+        Route::post('/profile',[UserController::class, 'update'])->name('admin_profile');
     });
 
     Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
@@ -64,6 +88,6 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/', [UserController::class, 'index'])->name('user_homepage');
         Route::get('/become-supporter', [PaymentController::class, 'index'])->name('become_supporter');
         Route::get('/profile', [UserController::class, 'profile_setting'])->name('user_profile');
-        Route::post('/profile',[UserController::class, 'store'])->name('update_profile');
+        Route::post('/profile',[UserController::class, 'update'])->name('update_profile');
     });
 });

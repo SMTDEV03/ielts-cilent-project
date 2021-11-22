@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-@section('title','Account Settings')
+@section('title','User List')
 
 @section('content')
 
@@ -15,7 +15,7 @@
         <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
             <li class="sub-bread"><i class="fa fa-angle-right"></i> Pages</li>
-            <li><i class="fa fa-angle-right"></i>Account Settings</li>
+            <li><i class="fa fa-angle-right"></i>User List</li>
         </ol>
     </div>
 

@@ -27,25 +27,7 @@ class UserController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'fname' => 'required|max:155',
-            'lname' => 'required|max:155',
-            'email' => 'required|unique:users|max:255',
-            'password' => 'min:6',
-        ]);
 
-        $user= User::find($request->id);
-        $user->fname = $request->fname;
-        $user->lname = $request->lname;
-        if($request->password){
-            $user->password = bcrypt($request->password);
-        }
-        $user->save();
-
-        if($user){
-            return back()->with('success','Registered Successfully');
-        }
-        return back()->withErrors(['error' => 'Something went wrong']);
     }
 
   
@@ -61,9 +43,28 @@ class UserController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        
+        $request->validate([
+            'fname' => 'required|max:155',
+            'lname' => 'required|max:155',
+            'email' => 'required|max:255',
+            'password' => 'nullable|min:6'
+        ]);
+
+        $user= User::find($request->id);
+        $user->fname = $request->fname;
+        $user->lname = $request->lname;
+        if($request->password){
+            $user->password = bcrypt($request->password);
+        }
+        $user->save();
+
+        if($user){
+            return back()->with('success','Profile has been Successfully Updated');
+        }
+        return back()->withErrors(['error' => 'Something went wrong']);
     }
 
     public function destroy($id)

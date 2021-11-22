@@ -40,10 +40,10 @@
 <script src="https://cdn.prowritingaid.com/beyondgrammar/2.0.2893/dist/hayt/bundle.js"></script>
 <script>
     $(document).ready(function() {
-        $('#correct').click(function() {
+        
             const settings = {
                 service: {
-                    apiKey: "E8FEF7AE-3F36-4EAF-A451-456D05E6F2A3",
+                    apiKey: "387F66ED-5D1B-4DDA-B1A3-608B594DFAA3",
                     serviceUrl: 'https://rtg.prowritingaid.com'
                 },
                 grammar: {
@@ -62,7 +62,6 @@
             checker.init()
                 .then(() => checker.activate())
         });
-    });
 </script>
 @endsection
 

@@ -12,7 +12,7 @@
               <!-- Tab panes -->
               <div class="tab-content">
                 <div class="card-body">
-                  <form class="form-horizontal form-material" action="{{ route('update_profile') }}" method="post">
+                  <form class="form-horizontal form-material" action="@if(auth()->user()->role_id == 1) {{ route('update_profile') }}@else {{ route('admin_profile') }} @endif" method="post">
                     @csrf
                     <input type="hidden" name="id" value="{{ auth()->user()->id }}" />
                     <input type="hidden" name="role" value="{{ auth()->user()->role_id }}" />
@@ -62,3 +62,4 @@
       <!-- Main row -->
     </div>
     <!-- /.content -->
+

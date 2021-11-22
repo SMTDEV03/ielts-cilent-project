@@ -135,6 +135,10 @@
 <x-testimonial />
 <!-- Testimonial End -->
 
+<!-- Pricing Start -->
+<x-pricing />
+<!-- Pricing  End-->
+
 <!-- Subscribe Start -->
 <x-subscribe />
 <!-- Subscribe End -->

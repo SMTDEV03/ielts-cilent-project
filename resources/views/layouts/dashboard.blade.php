@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +16,8 @@
     <link rel="stylesheet" href="{{ asset('public/assets/back_assets/css/font-awesome/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/back_assets/css/et-line-font/et-line-font.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/back_assets/css/themify-icons/themify-icons.css') }}">
-   
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
     @yield('extra-css')
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,19 +26,36 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
+
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper boxed-wrapper">
         <x-dashboard.header />
-        @yield('content') 
-             
+        @yield('content')
+
     </div>
 </body>
-    <!-- jQuery 3 -->
-    <script src="{{ asset('public/assets/back_assets/js/jquery.min.js') }}"></script>
-    <!-- v4.0.0-alpha.6 -->
-    <script src="{{ asset('public/assets/back_assets/bootstrap/js/bootstrap.min.js') }}"></script>
-    <!-- template -->
-    <script src="{{ asset('public/assets/back_assets/js/niche.js') }}"></script>
-    @yield('extra-js')
+<!-- jQuery 3 -->
+<script src="{{ asset('public/assets/back_assets/js/jquery.min.js') }}"></script>
+<!-- v4.0.0-alpha.6 -->
+<script src="{{ asset('public/assets/back_assets/bootstrap/js/bootstrap.min.js') }}"></script>
+<!-- template -->
+<script src="{{ asset('public/assets/back_assets/js/niche.js') }}"></script>
+
+<!-- Include a required theme -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+@if(session()->has('success'))
+<script>
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: "{{ session('success') }}",
+        showConfirmButton: false,
+        timer: 1500
+    })
+</script>
+@endif
+
+@yield('extra-js')
 
 </html>
