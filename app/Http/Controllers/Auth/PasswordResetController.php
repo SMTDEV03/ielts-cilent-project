@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Mail;
 class PasswordResetController extends Controller
 {
     //  function 
-    public function password_reset_index(){
+    public function index(){
         return view('auth.passwords.forgotPassword');
     }
     public function password_reset(Request $request){

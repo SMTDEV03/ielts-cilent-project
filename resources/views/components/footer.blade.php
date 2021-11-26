@@ -13,8 +13,10 @@
                       </a>
                    </div>
                    <div class="widget-info">
-                      <p class="mb-1">This service helps students prepare for IELTS exam. By using this site, you agree to read and accept our terms of use, cookies and privacy policy.</p>
-                      <p class="mb-1">Crack-IELTS is a registered trademark of University of Cambridge ESOL, the British Council, and IDP Education Australia. Crack-IELTS is not affiliated, approved or endorsed by the University of Cambridge ESOL, the British Council, and IDP Education Australia. All other trademarks on this website are the property of their respective owners.</p>
+                      
+                      <p class="mb-1">Students can prepare for the IELTS exam with this service. Before using this site, you must read and accept the terms of use, cookie policy, and privacy policies. It is a one-stop destination to get assistance for a perfect essay and letter writing. Our services help you increase your chance to get a better IELTS score. Enroll now! 
+</p>
+                      <!-- <p class="mb-1">Crack-IELTS is a registered trademark of University of Cambridge ESOL, the British Council, and IDP Education Australia. Crack-IELTS is not affiliated, approved or endorsed by the University of Cambridge ESOL, the British Council, and IDP Education Australia. All other trademarks on this website are the property of their respective owners.</p> -->
                       <p class="mb-1"><b>Email:admin1@howtocrackielts.com</b></p>
                    </div>
                 </div>

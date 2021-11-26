@@ -4,8 +4,20 @@
        <div class="col-lg-6">
           <!-- Register & Login Images Start -->
           <div class="register-login-images">
-             <div class="images">
-                <img src="{{ asset('public/assets/front_assets/images/register-login.png') }}" alt="Register Login">
+             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                   <div class="carousel-item active">
+                      <img src="{{ asset('public/assets/front_assets/images/register-slider-1.png') }}" class="d-block mx-auto" alt="">
+                   </div>
+                   <div class="carousel-item">
+                      <img src="{{ asset('public/assets/front_assets/images/register-slider-2.png') }}" class="d-block mx-auto" alt="">
+                   </div>
+
+                </div>
              </div>
           </div>
           <!-- Register & Login Images End -->
@@ -40,10 +52,12 @@
                       <input type="password" name="c_password" placeholder="Confirm Password" value="{{ old('c_password') }}">
                    </div>
                    <!-- Single Form End -->
+                  
                    <!-- Single Form Start -->
                    <div class="single-form">
                       <button class="btn btn-primary btn-hover-dark w-100">Create an account</button>
                    </div>
+
                    <!-- Single Form End -->
                 </form>
              </div>

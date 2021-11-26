@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\UserMail;
 
 class RegisterController extends Controller
 {
@@ -29,6 +31,11 @@ class RegisterController extends Controller
             'password' => bcrypt($request->password),
         ]);
         if($user){
+
+            $data = ['name'=> $request->fname,'email'=>$request->email,'login'=>route('login_index')];
+            $template = 'mail_templates.registration';
+        
+        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new UserMail($data,$template));
             return redirect('/login')->with('success','Registered Successfully');
         }
         return back()->withErrors(['error' => 'Something went wrong']);

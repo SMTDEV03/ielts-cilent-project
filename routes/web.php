@@ -30,7 +30,7 @@ use App\Http\Controllers\User\PaymentController;
 // Routes for site
 Route::get('/', [HomeController::class, 'index'])->name('homepage');
 Route::get('correction', [CorrectionController::class, 'index'])->name('correction_page');
-Route::get('self-correction', [CorrectionController::class, 'create'])->name('self-correction');
+// Route::get('self-correction', [CorrectionController::class, 'create'])->name('self-correction');
 
 Route::get('samples/{type}', [SampleController::class, 'index'])->name('samples');
 Route::get('detailed-sample/{type}/{id}', [SampleController::class, 'show'])->name('detail_samples');

@@ -4,7 +4,7 @@
       <!-- Section Title Start -->
       <div class="section-title shape-03 text-center">
          <h5 class="sub-title">Testimonial</h5>
-         <h2 class="main-title">Feedback From <span> Student</span></h2>
+         <h2 class="main-title">Feedback from our <span> Students</span></h2>
       </div>
       <!-- Section Title End -->
       <!-- Testimonial Wrapper End -->
@@ -23,7 +23,7 @@
                      </span>
                   </div>
                   <div class="testimonial-content">
-                     <p>Lorem Ipsum has been the industry's standard dummy text since the 1500s, when an unknown printer took a galley of type and scrambled it to make type specimen book has survived not five centuries but also the leap into electronic.</p>
+                     <p>It was my pleasure learning with Techno IELTS. I got the opportunity to improve my writing skills. This portal has helped me throughout my learning journey. Thanks to the team for such amazing guidance.</p>
                      <h4 class="name">Sara Alexander</h4>
                      <span class="designation">Product Designer, USA</span>
                   </div>
@@ -41,7 +41,7 @@
                      </span>
                   </div>
                   <div class="testimonial-content">
-                     <p>Lorem Ipsum has been the industry's standard dummy text since the 1500s, when an unknown printer took a galley of type and scrambled it to make type specimen book has survived not five centuries but also the leap into electronic.</p>
+                     <p>I was not that good at essay and letter writing. As soon as I enrolled in Techno IELTS, I got to know about my mistakes and worked on their improvement. With the team’s assistance, I got to improve my IELTS score.</p>
                      <h4 class="name">Melissa Roberts</h4>
                      <span class="designation">Product Designer, USA</span>
                   </div>
@@ -59,7 +59,7 @@
                      </span>
                   </div>
                   <div class="testimonial-content">
-                     <p>Lorem Ipsum has been the industry's standard dummy text since the 1500s, when an unknown printer took a galley of type and scrambled it to make type specimen book has survived not five centuries but also the leap into electronic.</p>
+                     <p>I am glad that I enrolled at Techno IELTS. The tests they provide helped me a lot in enhancing my essay writing skills. Now I can easily write an error-free essay within no time. Thanks for the assistance.</p>
                      <h4 class="name">Sara Alexander</h4>
                      <span class="designation">Product Designer, USA</span>
                   </div>

@@ -9,8 +9,8 @@
        <div class="download-app-wrapper mt-n6 text-center">
           <!-- Section Title Start -->
           <div class="section-title section-title-white">
-             <h5 class="sub-title">Ready to start?</h5>
-             <h2 class="main-title text-capitalize"> Become a Member and get access to all premium <br>features and extra content</h2>
+             <h5 class="sub-title">All Prepped Up To Start?</h5>
+             <h2 class="main-title text-capitalize"> Enroll in our services and increase your <br>chance to get a better score in IELTS.</h2>
              <a href="{{ route('login_index') }}" class="btn btn-primary subscribe-btn mt-5">Subscribe Now!</a>
           </div>
        </div>

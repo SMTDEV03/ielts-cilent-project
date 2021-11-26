@@ -17500,7 +17500,7 @@ img {
     font-size: 70px;
     color: #fff;
     display: block;
-    line-height: 1;
+    line-height:0;
 }
 @media only screen and (max-width: 767px) {
     .shape-icon-box .box-content .box-wrapper i {
@@ -23627,12 +23627,46 @@ img {
 
 
  /*------------------Pricing CSS--------------------*/
+ 
+/*------------------Pricing Popup CSS--------------------*/
 
+.price-pop-body .pricing-plan-basic .card-body, .price-pop-body .pricing-plan-enterprise .card-body{
+	padding-top:30px;
+    padding-bottom:25px;}
 
+.price-pop-body .pricing-plan-icon{margin-bottom:5px; font-size:32px;}
 
+.price-pop-body .pricing-plan-cost{font-size:28px; margin-bottom:2px;}
 
+.price-pop-body .pricing-plan-title{font-size:16px;}
 
+.price-pop-body .pricing-plan-basic .card-body .btn, .price-pop-body .pricing-plan-enterprise .card-body .btn{font-size:14px; line-height:38px;}
 
+.price-pop-body .pricing-plan-basic .card-body .pricing-plan-features{margin-bottom:20px;}
+
+.price-pop-body .pricing-plan-enterprise .card-body .pricing-plan-features{margin-bottom:20px;}
+
+.price-pop-body .pricing-plan-basic .card-body .plan-expire, .price-pop-body .pricing-plan-enterprise .card-body .plan-expire{
+	margin-bottom:10px; 
+    font-size:14px;}
+
+.price-pop-body .pricing-plan-basic .card-body .pricing-plan-features li{line-height:38px; font-size:13px;}
+
+.price-pop-body .pricing-plan-enterprise .card-body .pricing-plan-features li{line-height:38px; font-size:13px;}
+
+#price-popup .price-pop-body{padding:1.5rem 2rem;}
+
+#price-popup .modal-dialog {max-width:800px;}
+
+#price-popup{background: #0000009c;}
+
+#price-popup .modal-header h5{text-align:center; width:100%; display:block; font-weight: 700;}
+
+#price-popup .modal-header{padding: 15px 15px;}
+
+.price-pop-body .pricing-plan-basic, .price-pop-body .pricing-plan-enterprise{margin-bottom: 15px;}
+
+/*------------------Pricing Popup CSS--------------------*/
 
 
 

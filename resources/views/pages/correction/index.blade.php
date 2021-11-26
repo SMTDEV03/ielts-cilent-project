@@ -23,7 +23,7 @@
             </div>
             <div class="col-lg-4">
                 <!-- Sidebar Start -->
-                <x-sidebar :data="$samples"/>
+                <x-sidebar :data="$samples" />
                 <!-- Sidebar End -->
             </div>
         </div>
@@ -34,16 +34,21 @@
 <x-subscribe />
 <!-- Subscribe End -->
 
+<!-- Popup  -->
+<x-popup />
+<!-- end popup -->
+
 @endsection
 
+@if(isset(auth()->user()->id))
 @section('extra-js')
 <script src="https://cdn.prowritingaid.com/beyondgrammar/2.0.2893/dist/hayt/bundle.js"></script>
 <script>
-    $(document).ready(function() {
-        
+    function check_spell() {
+        // if ($('#correct1').attr('main') == 0) {
             const settings = {
                 service: {
-                    apiKey: "387F66ED-5D1B-4DDA-B1A3-608B594DFAA3",
+                    apiKey: "E8FEF7AE-3F36-4EAF-A451-456D05E6F2A3",
                     serviceUrl: 'https://rtg.prowritingaid.com'
                 },
                 grammar: {
@@ -61,9 +66,14 @@
 
             checker.init()
                 .then(() => checker.activate())
-        });
+
+            // $('#correction_form_block').html('<textarea class="h-auto" placeholder="Type or paste your essay, letter or academic writing" rows="14" cols="50" id="correct1" main="0"></textarea>');
+            // $('#correct1').attr('main', 1);
+        // } 
+    }
 </script>
 @endsection
+@endif
 
 @section('extra-css')
 <style>

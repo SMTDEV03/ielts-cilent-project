@@ -77,8 +77,8 @@ class UserListController extends Controller
         $request->validate([
             'fname' => 'required|max:155',
             'lname' => 'required|max:155',
-            'email' => 'required|unique:users|max:255',
-            'password' => 'min:6',
+            'email' => 'required|max:255',
+            'password' => 'nullable|min:6',
         ]);
 
         $user= User::find($request->id);

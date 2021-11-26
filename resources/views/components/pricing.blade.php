@@ -20,8 +20,12 @@
                 <li>Custom Test</li>
                 <li>10 participants max</li>
               </ul>
-              <a href="#!" class="btn btn-primary btn-hover-dark">Purchase</a>
-            </div>
+              @if(!isset(auth()->user()->id))
+              <a  onclick="window.location.href='{{ route('login_index') }}'" class="btn btn-primary btn-hover-dark"> Purchase</a>
+              @else
+              <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IQ9KRIBDrKC5T2" async> </script> </form>
+                @endif
+              </div>
           </div>
         </div>
         
@@ -38,7 +42,12 @@
                 <li>Custom Test</li>
                 <li>10 participants max</li>
               </ul>
-              <a href="#!" class="btn btn-primary btn-hover-dark">Purchase</a>
+              @if(!isset(auth()->user()->id))
+              <a  onclick="window.location.href='{{ route('login_index') }}'" class="btn btn-primary btn-hover-dark"> Purchase</a>
+              @else
+              <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IQ9PaJWGQYQkzf" async> </script> </form>
+              @endif
+              
             </div>
           </div>
         </div>
