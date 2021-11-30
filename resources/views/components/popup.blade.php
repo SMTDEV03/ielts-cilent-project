@@ -15,10 +15,9 @@
 	  								<h3 class="pricing-plan-cost ml-auto">$3</h3>
 	  								<span class="plan-expire">Per 2 Weeks</span>
 	  								<ul class="pricing-plan-features">
-	  									<li>Unlimited conferences</li>
-	  									<li>100 participants max</li>
-	  									<li>Custom Test</li>
-	  									<li>10 participants max</li>
+	  									<li>100+ Recent Essays</li>
+	  									<li>100+ Recent Letters</li>
+	  									<li>Self Correction</li>
 	  								</ul>
 	  								@if(!isset(auth()->user()->id))
 	  								<a onclick="window.location.href='{{ route('login_index') }}'" class="btn btn-primary btn-hover-dark w-100 mx-auto d-block"><i class="fa fa-check-square-o" aria-hidden="true"></i> Check With Assistant</a>
@@ -39,10 +38,9 @@
 	  								<h3 class="pricing-plan-cost ml-auto">$5</h3>
 	  								<span class="plan-expire">Per Month</span>
 	  								<ul class="pricing-plan-features">
-	  									<li>Unlimited conferences</li>
-	  									<li>100 participants max</li>
-	  									<li>Custom Test</li>
-	  									<li>10 participants max</li>
+	  									<li>100+ Recent Essays</li>
+	  									<li>100+ Recent Letters</li>
+	  									<li>Self Correction</li>
 	  								</ul>
 	  								@if(!isset(auth()->user()->id))
 	  								<a onclick="window.location.href='{{ route('login_index') }}'" class="btn btn-primary btn-hover-dark w-100 mx-auto d-block"><i class="fa fa-check-square-o" aria-hidden="true"></i> Check With Assistant</a>

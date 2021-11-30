@@ -3,7 +3,7 @@
       <!-- Slider Content Start -->
       <div class="slider-content">
          <h4 class="sub-title">Start your skill Enhancement Process</h4>
-         <h2 class="main-title">Be your own <span>tutor</span> for Grammar</h2>
+         <h2 class="main-title">Be your own <span>tutor</span> for IELTS Writing </h2>
          <p>Enhance your writing skills with us. We provide IELTS-based writing tests to let you improve your skills. Become a perfectionist in grammar!</p>
          <a class="btn btn-primary btn-hover-dark" href="{{ route('correction_page') }}">Start Essay Correction</a>
       </div>
@@ -16,7 +16,7 @@
          <div class="box-wrapper">
             <p class="offer-text">OFFER</p>
             <span class="count">$3</span>
-            <p>Per Month</p>
+            <p>Per Two Weeks</p>
          </div>
       </div>
       <img class="shape-2" src="{{ asset('public/assets/front_assets/images/shape/shape-6.png') }}" alt="Shape">

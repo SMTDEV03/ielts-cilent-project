@@ -12,12 +12,12 @@
         <!-- sidebar menu: : style can be found in sidebar.less -->
 
         <ul class="sidebar-menu" data-widget="tree">
-            <li class="header">PERSONAL</li>
+            <li class="header">User Dashboard</li>
             <li  class="{{ Request::is('user') ? 'active' : '' }}" > <a href="{{ route('user_homepage') }}"> <i class="fa fa-dashcube"></i> <span>Dashboard</span> <span class="pull-right-container"></span> </a>
             </li>
-            <li class="{{ Request::segment(2) === 'become-supporter' ? 'active' : '' }}"> <a href="{{ route('become_supporter') }}"> <i class="fa fa-bolt"></i> <span>Become a Suppoter</span> <span class="pull-right-container"></span> </a>
+            <li class="{{ Request::segment(2) === 'become-supporter' ? 'active' : '' }}"> <a href="{{ route('become_supporter') }}"> <i class="fa fa-bolt"></i> <span>Buy a plan</span> <span class="pull-right-container"></span> </a>
 
-            <li class="treeview {{ Request::segment(1) === 'become-supporter' ? 'active' : '' }}"> <a href="#"> <i class="fa fa-microphone"></i> <span>Speaking</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
+            <!-- <li class="treeview {{ Request::segment(1) === 'become-supporter' ? 'active' : '' }}"> <a href="#"> <i class="fa fa-microphone"></i> <span>Speaking</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
                 <ul class="treeview-menu">
                     <li><a href="{{ route('become_supporter') }}">Speaking club</a></li>
                     <li><a href="{{ route('become_supporter') }}">Recent Topics</a></li>
@@ -40,7 +40,7 @@
                     <li><a href="{{ route('become_supporter') }}">General Tests</a></li>
                     <li><a href="{{ route('become_supporter') }}">Vocabulary</a></li>
                 </ul>
-            </li>
+            </li> -->
 
 
             <li class="treeview {{ Request::segment(1) === 'become-supporter' ? 'active' : '' }}"> <a href="#"> <i class="fa fa-pencil-square-o"></i> <span>Writing</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>

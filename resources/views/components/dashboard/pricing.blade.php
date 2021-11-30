@@ -11,12 +11,15 @@
             <small>Per 2 Weeks</small>
           </div>
           <ul class="plan-list">
-            <li>Unlimited conferences</li>
-            <li>100 participants max</li>
-            <li>Custom Test</li>
-            <li>10 participants max</li>
+            <li>100+ Recent Essays</li>
+            <li>100+ Recent Letters</li>
+            <li>Self Correction</li>
           </ul>
-          <div class="button m-t-2"><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IQ9KRIBDrKC5T2" async> </script> </form></div>
+          <div class="button m-t-2">
+            <form>
+              <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IQ9KRIBDrKC5T2" async> </script>
+            </form>
+          </div>
         </div>
       </div>
       <div class="col-lg-5">
@@ -27,17 +30,18 @@
             <small>per month</small>
           </div>
           <ul class="plan-list">
-            <li>Unlimited conferences</li>
-            <li>100 participants max</li>
-            <li>Custom Test</li>
-            <li>10 participants max</li>
+            <li>100+ Recent Essays</li>
+            <li>100+ Recent Letters</li>
+            <li>Self Correction</li>
           </ul>
-          <div class="button m-t-2"><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IQ9PaJWGQYQkzf" async> </script> </form></div>
+          <div class="button m-t-2">
+            <form>
+              <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IQ9PaJWGQYQkzf" async> </script>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 <!-- /.content -->
-
-

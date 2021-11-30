@@ -44,7 +44,7 @@
                <i class="flaticon-forms"></i>
             </div>
             <div class="work-content">
-               <h3 class="title">Take a Test</h3>
+               <h3 class="title">Click on Eassy Correction</h3>
                <p>Paste your essay in the portal to have a check.</p>
             </div>
          </div>
@@ -107,7 +107,7 @@
             <div class="about-content mx-0">
                <h5 class="sub-title">One-Stop Writing Assistant</h5>
                <h2 class="main-title">Become the Essay Writing <span>Expert</span></h2>
-               <p>At Techno IELTS, we provide the essay and letter writing tests along with their answers to help you improve and enhance your writing skills. With improved writing skills, you will get the opportunity to get a better IELTS score. What all you will get is:</p>
+               <p>At How to crack IELTS, we provide the essay and letter writing tests along with their answers to help you improve and enhance your writing skills. With improved writing skills, you will get the opportunity to get a better IELTS score. What all you will get is:</p>
                <ul class="about-list">
                   <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Essay Writing Guide.</li>
                   <li><i class="fa fa-check-square-o" aria-hidden="true"></i> Assessment Tests.</li>
